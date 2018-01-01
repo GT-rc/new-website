@@ -3,9 +3,11 @@
 
     <!-- Header/ Titles / Etc. -->
     <head>
+        {% block head %}
         <title>{% block title %}{% endblock %} - GT-rc</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="../static/css/shared.css" />
+        {% endblock %}
     </head>
 
     <!-- Body of Base Template  -->
