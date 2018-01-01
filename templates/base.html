@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 
+    <!-- Header/ Titles / Etc. -->
     <head>
-        <title>This will be a better title later.</title>
+        <title>{% block title %}{% endblock %} - GT-rc</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" type="text/css" href="../static/styles/style.css" />
+        <link rel="stylesheet" type="text/css" href="../static/css/shared.css" />
     </head>
 
-
+    <!-- Body of Base Template  -->
     <body>
 
-        <!-- create nav bar - look into navbar tag class="nav"  -->
+        <!-- Top Navigation Menu  -->
         <div class="nav">
             <ul>
                 <li><a class="actve" href="#home">home</a></li>
@@ -20,17 +21,29 @@
             </ul>
         </div>
 
-        <hr>
         <br>
+        
+        <!-- Page Extension Code  -->
+        
+        <div class="body">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+<!--
+        <!- Random stuff for testing  ->
 
         <h1>For The Purposes of Testing</h1>
 
-        <p>Let's see what we end up with...
-            <sub>ok, dudeman?</sub></p>
-            
-        <!-- Insert page extension placeholders here  -->
+        <p>Let's see what we end up with...<em>ok, dudeman?</em></p>
+        
+        <p>And now, this:</p>
 
+        <img src="../static/img/funny-password.jpeg" alt="Funny Meme Image" width="300" height="200" /> 
+-->        
     </body>
+
+    <!-- Footer -->
 
     <footer class="footer">
         &copy;2018 by <a href="mailto:glynnisthomas@gmail.com?Subject=Note%20From%20Self%20Site" >Glynnis Thomas</a>
