@@ -1,0 +1,60 @@
+/* what order do these go in? logical? elements / class / id? generational? */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: deepskyblue;
+
+}
+/*
+.nav {
+    overflow: hidden;
+} */
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.nav li a.active {
+    color: white;
+    background-color: #4caf50;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    color: darkslategray;
+}
+/*
+#portfolio {
+
+} */
+
+.footer {
+    font-size: 0.80em;
+    background-color: #666;
+}
