@@ -1,0 +1,3 @@
+Create portfolio galleries -- dropdown to go do different specialties
+    - should be able to copy the initial page and make adjustments, and then just change the nav
+
