@@ -19,15 +19,24 @@
                 <h1 class="col-sm-3">GT-rc</h1>
                 <!-- Top Navigation Menu (refactoring with Bootstrap) -->
                 <nav class="col-sm-9 text-right">
-                    <p><a class="actve" href="#home">home</a></p>
-                    <p><a href="#about">about</a></p>
-                    <p><a href="#portfolio">portfolio</a></p>
-                    <p><a href="#contact">contact</a></p>
+                    <p><a class="actve" href="/">home</a></p>
+                    <p><a href="/about">about</a></p>
+                    <p><a href="/portfolio">portfolio</a></p>
+                    <p><a href="/contact">contact</a></p>
                 </nav>
             </div>
         </header>
         <br>
         
+        <!-- Set up to allow flash messages. -->
+        {% with messages = get_flashed_messages(with_categories=True) %}
+        <ul>
+            {% for category, message in messages %}
+                <li class="{{category}}">{{message}}</li>
+            {% endfor %}
+        </ul>
+        {% endwith %}
+
         <!-- Page Extension Code  -->
         
         <div class="body">
@@ -58,10 +67,10 @@
         <div class="row">
             <p class="col-sm-4">&copy; 2018 GT-rc</p>
             <ul class="col-sm-8">
-                <li class="col-sm-1"><!-- Social Media Icon img tags go in here --></li>
-                <li class="col-sm-1"></li>
-                <li class="col-sm-1"></li>
-                <li class="col-sm-1"></li>
+                <li class="col-sm-1">make-do<!-- Social Media Icon img tags go in here --></li>
+                <li class="col-sm-1">placeholder</li>
+                <li class="col-sm-1">makeshift</li>
+                <li class="col-sm-1">transitory</li>
             </ul>
         </div>
     </footer>

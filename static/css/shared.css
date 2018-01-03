@@ -92,6 +92,14 @@ p {
 
 /* Other Classes */
 
+.error {
+    color:red;
+    text-align: center;
+    font-style: italic;
+}
+
+/* From Tutorial */
+
 header {
     padding: 20px 0;
 }
