@@ -8,10 +8,13 @@
 
 {% block content %}
 
-    <h1>About me and my Portfolio Website</h1>
+<div class="container">
+    <div class="page-header">
+        <h2>About</h2>
+    </div>
+</div>
 
-    <h3>Some additional exposition, for your edification.</h3>
-
+<div class="container">
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Sed pulvinar odio commodo, eleifend nibh at, dictum ex. 
@@ -24,20 +27,24 @@
         lacinia tincidunt, nibh lacus egestas mauris, eget tempus diam 
         nunc euismod elit. Donec in ante et libero mattis ultrices.
     </p>
-
-    <p>
-        Nam eu dui et sem consequat interdum id at neque. Integer 
-        vestibulum lorem et venenatis porttitor. Integer erat lectus, 
-        consequat sollicitudin maximus posuere, aliquam id lacus. Proin 
-        rutrum magna sit amet metus sollicitudin aliquam. Nam a lorem 
-        et felis varius vestibulum vel id nunc. Donec gravida metus 
-        lacus, nec faucibus purus ultrices aliquet. Praesent ut viverra 
-        ante. Nunc tempor a sem a facilisis. In ut eros cursus, 
-        porttitor sapien ut, pellentesque mi. Aenean interdum quam 
-        vitae est luctus, ac porta turpis convallis. Morbi non diam 
-        tortor. Nullam porta nunc quam, sit amet tristique orci rutrum 
-        ac. Curabitur lobortis, turpis vel sagittis sollicitudin, est 
-        magna lacinia dui, id dapibus dolor dui sit amet metus.
-    </p>
-
+<!--
+    <a href="#more" class="btn btn-info" data-toggle="collapse">More</a>
+    <div id="more" class="collapse in"> <!- not working ->
+        <p>
+            Nam eu dui et sem consequat interdum id at neque. Integer 
+            vestibulum lorem et venenatis porttitor. Integer erat lectus, 
+            consequat sollicitudin maximus posuere, aliquam id lacus. Proin 
+            rutrum magna sit amet metus sollicitudin aliquam. Nam a lorem 
+            et felis varius vestibulum vel id nunc. Donec gravida metus 
+            lacus, nec faucibus purus ultrices aliquet. Praesent ut viverra 
+            ante. Nunc tempor a sem a facilisis. In ut eros cursus, 
+            porttitor sapien ut, pellentesque mi. Aenean interdum quam 
+            vitae est luctus, ac porta turpis convallis. Morbi non diam 
+            tortor. Nullam porta nunc quam, sit amet tristique orci rutrum 
+            ac. Curabitur lobortis, turpis vel sagittis sollicitudin, est 
+            magna lacinia dui, id dapibus dolor dui sit amet metus.
+        </p>
+    </div>
+-->
+</div>
 {% endblock %}

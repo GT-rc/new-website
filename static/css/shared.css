@@ -12,7 +12,7 @@ html, body {
 
 .nav {
     border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+    background-color: #544d6b;
 } 
 
 .nav ul {
@@ -54,7 +54,7 @@ body {
 }
 
 .body {
-    text-align: center;
+    text-align: justify;
 }
 
 h1 {
@@ -161,9 +161,9 @@ section .row img {
 .btn.btn-primary {
     border-radius: 2px;
     border: 0px;
-    color: #fbd1d5;
+    color: #c9878e;
     text-shadow: none;
-    background-color: #ffffff;
+    background-color: #a50808;
 }
 
 .btn.btn-primary:hover {
