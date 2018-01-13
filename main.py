@@ -2,16 +2,12 @@
 
 import os
 from flask import Flask, request, redirect, render_template, flash
-# import db stuff here
+from app import app, db
+from models import ContactForm
 import jinja2
 
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(template_dir), autoescape=True)
-
-app = Flask(__name__)
-app.config['DEBUG'] = True
-
-# Hookup db here - if you decide you need one //// ooh! put the contact form responses in there?
 
 @app.route("/", methods=['GET'])
 def home():
