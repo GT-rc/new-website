@@ -17,13 +17,38 @@
 </div>
 
 <div class="container">
-    <div class="well well-sm">
-        <p>Light switch rave!</p>
-        <span class="glyphicon glyphicon-leaf"></span>
-        <img src="../static/img/the_cheat.png" class="img-rounded" alt="The Cheat" />
-        <p><em>The Cheat is grounded!</em></p>
+    <div class="col-sm-6">
+        <form action="#">
+            <div class="form-group">
+                <label for="email" class="form-control">Your Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" />
+            </div>
+            <div class="form-group">
+                <label for="name" class="form-control">Your Name:</label>
+                <input type="text" class="form-control" id="name" aria-placeholder="Enter your name" name="name" />
+            </div>
+            <div class="form-group">
+                <label for="comment" class="form-control">Your Message:</label>
+                <textarea class="form-control" rows="6" id="comment" placeholder="Enter your message"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+        </form>
     </div>
+    <div class="col-sm-6">    
+        <div class="well well-sm" style="text-align:center">
+            <p>Light switch rave!</p>
+            <span class="glyphicon glyphicon-leaf"></span>
+            <img src="../static/img/the_cheat.png" class="img-rounded" alt="The Cheat" />
+            <p><em>The Cheat is grounded!</em></p>
+        </div>
+    </div>    
 </div>
+
+<hr>
 
 <div class="container">
     <p class="text-primary">Would love to hear from you or something!</p>

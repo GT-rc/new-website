@@ -54,7 +54,7 @@ body {
 }
 
 .body {
-    text-align: justify;
+    text-align: right;
 }
 
 h1 {
@@ -195,3 +195,4 @@ footer li img {
     width: 32px;
     height: 32px;
 }
+
