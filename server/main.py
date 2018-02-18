@@ -28,9 +28,9 @@ def portfolio():
 def contact():
     """ This brings up the contact page. """
     if request.method == "POST":
-        # write logic to email info to myself
         flash("This isn't set up yet!", 'error')
         return redirect("/")
+    
     return render_template("contact.html")
 
 if __name__ == "__main__":
