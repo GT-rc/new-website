@@ -1,10 +1,12 @@
 """ First attempt at making a website from scratch with Flask and Bootstrap. Wish me luck! """
 
+import re
 import os
+import jinja2
 from flask import Flask, request, redirect, render_template, flash
 from app import app, db
-from models import ContactForm
-import jinja2
+from models import ContactForm, User
+from hashutils import make_pw_hash, check_pw_hash
 
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(template_dir), autoescape=True)
