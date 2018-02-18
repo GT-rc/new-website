@@ -7,7 +7,7 @@ import hmac
 
 def make_salt():
     """ Creates the salt that is tacked onto the end of the password to improve encryption. """
-    return ''.join([random.choice(string.ascii_letters) for f in range(5)])
+    return ''.join([random.choice(string.ascii_letters) for f in range(28)])
 
 def make_pw_hash(password, salt=None):
     """ Creates the actual password hash with the salt included.
@@ -29,7 +29,7 @@ def check_pw_hash(password, hashy):
 
 """ Functions for hasing and checking cookie values """
 
-SECRET = "w%'15w?O>,'M6[oTucse!3v>:AFb6q_<Wrz"
+SECRET = "w%'15w?O>'M6[oTucse!3v>:AFb6q_<Wrz"
 
 def hash_str(s):
     return hmac.new(SECRET,s).hexdigest()
