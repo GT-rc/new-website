@@ -3,6 +3,7 @@
 import string
 import random
 import hashlib
+import hmac
 
 def make_salt():
     """ Creates the salt that is tacked onto the end of the password to improve encryption. """
@@ -14,7 +15,7 @@ def make_pw_hash(password, salt=None):
         Takes an optional salt, also a string, which defaults to None. """
     if not salt:
         salt = make_salt()
-    new_hash = hashlib.sha256(str.encode(password + salt)).hexdigest()  # creates a unique user hash from the combined pw and salt
+    new_hash = hashlib.sha512(str.encode(salt + password)).hexdigest()  # creates a unique user hash from the combined pw and salt
     return '{0},{1}'.format(new_hash, salt)  # returns the new hash, including the salt so user can be verified later
 
 def check_pw_hash(password, hashy):
@@ -26,3 +27,17 @@ def check_pw_hash(password, hashy):
         return True
     return False
 
+""" Functions for hasing and checking cookie values """
+
+SECRET = "w%'15w?O>,'M6[oTucse!3v>:AFb6q_<Wrz"
+
+def hash_str(s):
+    return hmac.new(SECRET,s).hexdigest()
+
+def make_secure_val(s):
+    return '%s|%s' % (s, hash_str(s))
+
+def check_secure_val(h):
+    s = h.split('|')[0]
+    if h == make_secure_val(s):
+        return s
