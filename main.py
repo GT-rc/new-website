@@ -4,9 +4,9 @@ import re
 import os
 import jinja2
 from flask import Flask, request, redirect, render_template, flash
-from ..server.__pycache__.app import app, db
-from ..server.__pycache__.models import ContactForm, User
-from ..server.hashutils import make_pw_hash, check_pw_hash
+from server.app import app, db
+from server.models import ContactForm, User
+from server.hashutils import make_pw_hash, check_pw_hash
 
 template_dir = os.path.join(os.path.dirname(__file__), '../templates')
 jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(template_dir), autoescape=True)
