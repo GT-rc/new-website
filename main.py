@@ -8,7 +8,7 @@ from server.app import app, db
 from server.models import ContactForm, User
 from server.hashutils import make_pw_hash, check_pw_hash
 
-template_dir = os.path.join(os.path.dirname(__file__), '../templates')
+template_dir = os.path.join(os.path.dirname(__file__), '/templates')
 jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(template_dir), autoescape=True)
 
 @app.route("/", methods=['GET'])
