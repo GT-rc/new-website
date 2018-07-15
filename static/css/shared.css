@@ -43,6 +43,11 @@ html, body {
     background-color: #4caf50;
 }
 
+#header-logo {
+    height: 15px;
+    width: 15px;
+}
+
 /* Main Page Elements */
 
 body {
