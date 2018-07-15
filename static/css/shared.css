@@ -67,6 +67,10 @@ section div p {
     text-align: center;
 }
 
+blockquote {
+    text-align: center;
+}
+
 p {
     color: darkslategray;
 }
