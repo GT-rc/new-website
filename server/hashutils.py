@@ -41,3 +41,4 @@ def check_secure_val(h):
     s = h.split('|')[0]
     if h == make_secure_val(s):
         return s
+

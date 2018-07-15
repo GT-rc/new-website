@@ -1,7 +1,7 @@
 """ Model Classes """
 
-from app import db
-from hashutils import make_pw_hash
+from server.app import db
+from server.hashutils import make_pw_hash
 
 class ContactForm(db.Model):
     id = db.Column(db.Integer, primary_key=True)

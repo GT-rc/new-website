@@ -4,11 +4,11 @@ import re
 import os
 import jinja2
 from flask import Flask, request, redirect, render_template, flash
-from app import app, db
-from models import ContactForm, User
-from hashutils import make_pw_hash, check_pw_hash
+from server.app import app, db
+from server.models import ContactForm, User
+from server.hashutils import make_pw_hash, check_pw_hash
 
-template_dir = os.path.join(os.path.dirname(__file__), '../templates')
+template_dir = os.path.join(os.path.dirname(__file__), 'templates/..')
 jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(template_dir), autoescape=True)
 
 @app.route("/", methods=['GET'])
