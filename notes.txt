@@ -6,7 +6,12 @@ with this project.
 
 To Start Flask Env: source activate site-env
 
-Packages Contained: click, flask, flask-sqlalchemy (forge), itsdangerous, jinja2, markupsafe, 
+Packages: certifi, click, flask, flask-sqlalchemy (forge), itsdangerous, jinja2, markupsafe, 
         pip, pymysql, python, setuptools, sqlalchemy (forge), vc, vs2105_runtime, werkzeug, 
         wheel, wincertstore
 
+To run project:
+        - In main folder in terminal:
+            - Activate flask env
+            - Run: python main.py
+            - Open http://localhost:5000/ to view
