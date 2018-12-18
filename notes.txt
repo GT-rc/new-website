@@ -1,7 +1,8 @@
 Create portfolio galleries -- dropdown to go do different specialties
     - should be able to copy the initial page and make adjustments, and then just change the nav
 
-Make docs for this!!!!! This is terrible, I don't even know which fucking flask environment goes 
+12/17/18
+Make docs for this!!!!! This is terrible, I don't even know which f-ing flask environment goes 
 with this project. 
 
 To Start Flask Env: source activate site-env
@@ -15,3 +16,5 @@ To run project:
             - Activate flask env
             - Run: python main.py
             - Open http://localhost:5000/ to view
+
+Using a SqlAlchemy Database
