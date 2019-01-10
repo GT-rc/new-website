@@ -35,10 +35,10 @@
         <!-- Allows Tooltip -->
         <script>
         $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();   
+            $('[data-toggle="tooltip"]').tooltip();
         });
         </script>
-        
+
         <!-- Set up to allow flash messages. -->
         {% with messages = get_flashed_messages(with_categories=True) %}
         <div class="alert alert-dismissable fade in">
@@ -52,7 +52,7 @@
         {% endwith %}
 
         <!-- Page Extension Code  -->
-        
+
         <div class="body">
             {% block content %}
 
@@ -64,11 +64,11 @@
         <h1>For The Purposes of Testing</h1>
 
         <p>Let's see what we end up with...<em>ok, dudeman?</em></p>
-        
+
         <p>And now, this:</p>
 
-        <img src="../static/img/funny-password.jpeg" alt="Funny Meme Image" width="300" height="200" /> 
--->        
+        <img src="../static/img/funny-password.jpeg" alt="Funny Meme Image" width="300" height="200" />
+-->
     <script src="../static/script.js"></script>
     <!-- Footer -->
 <!--
@@ -88,6 +88,6 @@
             </ul>
         </div>
     </footer>
-    
+
     </body>
 </html>

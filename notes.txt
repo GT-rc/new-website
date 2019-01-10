@@ -2,13 +2,13 @@ Create portfolio galleries -- dropdown to go do different specialties
     - should be able to copy the initial page and make adjustments, and then just change the nav
 
 12/17/18
-Make docs for this!!!!! This is terrible, I don't even know which f-ing flask environment goes 
-with this project. 
+Make docs for this!!!!! This is terrible, I don't even know which f-ing flask environment goes
+with this project.
 
 To Start Flask Env: source activate site-env
 
-Packages: certifi, click, flask, flask-sqlalchemy (forge), itsdangerous, jinja2, markupsafe, 
-        pip, pymysql, python, setuptools, sqlalchemy (forge), vc, vs2105_runtime, werkzeug, 
+Packages: certifi, click, flask, flask-sqlalchemy (forge), itsdangerous, jinja2, markupsafe,
+        pip, pymysql, python, setuptools, sqlalchemy (forge), vc, vs2105_runtime, werkzeug,
         wheel, wincertstore
 
 To run project:
@@ -18,3 +18,11 @@ To run project:
             - Open http://localhost:5000/ to view
 
 Using a SqlAlchemy Database
+
+Adding a Javascript page
+    Added src folder with index.js file
+    Added public folder with favicon.ico, index.html, manifest.json
+        In index.js set up base template with head imports of
+            Symantic UI style sheet, JS, and React
+    Added route to main.py for components page
+

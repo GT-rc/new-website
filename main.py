@@ -1,4 +1,7 @@
-""" First attempt at making a website from scratch with Flask and Bootstrap. Wish me luck! """
+""" First attempt at making a website from scratch with Flask
+and Bootstrap. Wish me luck!
+Plus now, with JavaScript and React!
+"""
 
 import re
 import os
@@ -9,22 +12,34 @@ from server.models import ContactForm, User
 from server.hashutils import make_pw_hash, check_pw_hash
 
 template_dir = os.path.join(os.path.dirname(__file__), 'templates/..')
-jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(template_dir), autoescape=True)
+jinja_env = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(template_dir),
+    autoescape=True)
+
 
 @app.route("/", methods=['GET'])
 def home():
     """ This brings up the home page. """
     return render_template("home.html")
 
+
 @app.route("/about", methods=['GET'])
 def about():
     """ This brings up the about page. """
     return render_template("about.html")
 
+
 @app.route("/portfolio", methods=['GET'])
 def portfolio():
     """ This brings up the portfolio page. """
     return render_template("portfolio.html")
+
+
+@app.route("/components", methods=['POST', 'GET'])
+def javascript():
+    """   """
+    return render_template("../../public/index.html")
+
 
 @app.route("/contact", methods=['POST', 'GET'])
 def contact():
@@ -32,8 +47,9 @@ def contact():
     if request.method == "POST":
         flash("This isn't set up yet!", 'error')
         return redirect("/")
-    
+
     return render_template("contact.html")
+
 
 if __name__ == "__main__":
     app.run()
