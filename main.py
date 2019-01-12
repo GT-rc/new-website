@@ -37,8 +37,8 @@ def portfolio():
 
 @app.route("/components", methods=['POST', 'GET'])
 def javascript():
-    """   """
-    return render_template("../../public/index.html")
+    """ This page shows some of my JS experience.  """
+    return render_template("../../public/index.html") # incorrect route
 
 
 @app.route("/contact", methods=['POST', 'GET'])

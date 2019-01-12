@@ -25,4 +25,5 @@ Adding a Javascript page
         In index.js set up base template with head imports of
             Symantic UI style sheet, JS, and React
     Added route to main.py for components page
+        Is not correct route -- also have to start seperately, so needs more research.
 
